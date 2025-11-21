@@ -1,0 +1,1372 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - ClienteControllerIT</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>ClienteControllerIT</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.example.demo.controller.html">com.example.demo.controller</a> &gt; ClienteControllerIT</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">10</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.283s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Method name</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">PUT /api/v1/clientes/{id} - Debe actualizar cliente</td>
+<td class="success">debeActualizarCliente()</td>
+<td class="success">0.016s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">GET /api/v1/clientes/buscar?nombre=X - Debe buscar cliente por nombre</td>
+<td class="success">debeBuscarClientePorNombre()</td>
+<td class="success">0.013s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">POST /api/v1/clientes - Debe crear cliente</td>
+<td class="success">debeCrearCliente()</td>
+<td class="success">0.019s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">DELETE /api/v1/clientes/{id} - Debe eliminar cliente</td>
+<td class="success">debeEliminarCliente()</td>
+<td class="success">0.013s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">GET /api/v1/clientes - Debe listar todos los clientes activos</td>
+<td class="success">debeListarClientesActivos()</td>
+<td class="success">0.015s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">GET /api/v1/clientes/{id} - Debe obtener cliente</td>
+<td class="success">debeObtenerClientePorId()</td>
+<td class="success">0.023s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">POST /api/v1/clientes - Debe retornar 400 cuando datos son inválidos</td>
+<td class="success">debeRetornar400CuandoDatosInvalidos()</td>
+<td class="success">0.111s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">GET /api/v1/clientes/{id} - Debe retornar 404 si cliente no existe</td>
+<td class="success">debeRetornar404CuandoClienteNoExiste()</td>
+<td class="success">0.045s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">POST /api/v1/clientes - Debe retornar 409 cuando cliente ya existe</td>
+<td class="success">debeRetornar409CuandoClienteYaExiste()</td>
+<td class="success">0.017s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">GET /api/v1/clientes/health - Debe retornar estado del servicio</td>
+<td class="success">debeRetornarEstadoDelServicio()</td>
+<td class="success">0.011s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2025-11-21 10:20:34 - Could not detect default configuration classes for test class [com.example.demo.controller.ClienteControllerIT]: ClienteControllerIT does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-11-21 10:20:34 - Found @SpringBootConfiguration com.example.demo.DemoApplication for test class com.example.demo.controller.ClienteControllerIT
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.0)
+
+2025-11-21 10:20:34 - Starting ClienteControllerIT using Java 21.0.2 with PID 11860 (started by ASUS GAMING in C:\Users\ASUS GAMING\Downloads\Ejercicio_Dos)
+2025-11-21 10:20:34 - Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-11-21 10:20:34 - No active profile set, falling back to 1 default profile: &quot;default&quot;
+2025-11-21 10:20:34 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7cf9557a
+2025-11-21 10:20:34 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-21 10:20:34 - Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interface.
+2025-11-21 10:20:34 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-21 10:20:34 - HHH000026: Second-level cache disabled
+2025-11-21 10:20:34 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-21 10:20:34 - HikariPool-2 - Starting...
+2025-11-21 10:20:34 - HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:clientesdb user=SA
+2025-11-21 10:20:34 - HikariPool-2 - Start completed.
+2025-11-21 10:20:34 - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-21 10:20:34 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-21 10:20:34 - 
+    drop table if exists clientes cascade 
+Hibernate: 
+    drop table if exists clientes cascade 
+2025-11-21 10:20:34 - 
+    create table clientes (
+        activo boolean,
+        fecha_registro timestamp(6) not null,
+        id bigint generated by default as identity,
+        telefono varchar(15),
+        nombre varchar(100) not null unique,
+        email varchar(255) unique,
+        primary key (id)
+    )
+Hibernate: 
+    create table clientes (
+        activo boolean,
+        fecha_registro timestamp(6) not null,
+        id bigint generated by default as identity,
+        telefono varchar(15),
+        nombre varchar(100) not null unique,
+        email varchar(255) unique,
+        primary key (id)
+    )
+2025-11-21 10:20:34 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-21 10:20:34 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-21 10:20:34 - 9 mappings in 'requestMappingHandlerMapping'
+2025-11-21 10:20:34 - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-11-21 10:20:34 - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-11-21 10:20:34 - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-11-21 10:20:34 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:clientesdb'
+2025-11-21 10:20:34 - Initializing Spring TestDispatcherServlet ''
+2025-11-21 10:20:34 - Initializing Servlet ''
+2025-11-21 10:20:34 - Completed initialization in 1 ms
+2025-11-21 10:20:34 - Started ClienteControllerIT in 0.512 seconds (process running for 10.615)
+2025-11-21 10:20:34 - 
+    select
+        c1_0.id,
+        c1_0.activo,
+        c1_0.email,
+        c1_0.fecha_registro,
+        c1_0.nombre,
+        c1_0.telefono 
+    from
+        clientes c1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.activo,
+        c1_0.email,
+        c1_0.fecha_registro,
+        c1_0.nombre,
+        c1_0.telefono 
+    from
+        clientes c1_0
+2025-11-21 10:20:34 - 
+    delete 
+    from
+        clientes 
+    where
+        id=?
+Hibernate: 
+    delete 
+    from
+        clientes 
+    where
+        id=?
+2025-11-21 10:20:34 - 
+    delete 
+    from
+        clientes 
+    where
+        id=?
+Hibernate: 
+    delete 
+    from
+        clientes 
+    where
+        id=?
+2025-11-21 10:20:34 - 
+    delete 
+    from
+        clientes 
+    where
+        id=?
+Hibernate: 
+    delete 
+    from
+        clientes 
+    where
+        id=?
+2025-11-21 10:20:34 - 
+    delete 
+    from
+        clientes 
+    where
+        id=?
+Hibernate: 
+    delete 
+    from
+        clientes 
+    where
+        id=?
+2025-11-21 10:20:34 - 
+    delete 
+    from
+        clientes 
+    where
+        id=?
+Hibernate: 
+    delete 
+    from
+        clientes 
+    where
+        id=?
+2025-11-21 10:20:34 - Mapped to com.example.demo.controller.ClienteController#crear(ClienteRequestDTO)
+2025-11-21 10:20:34 - Read &quot;application/json;charset=UTF-8&quot; to [ClienteRequestDTO(nombre=, email=email-invalido, telefono=0999999999)]
+2025-11-21 10:20:34 - Using @ExceptionHandler com.example.demo.exception.GlobalExceptionHandler#handleValidationExceptions(MethodArgumentNotValidException, HttpServletRequest)
+2025-11-21 10:20:34 - Error de validación: Validation failed for argument [0] in public org.springframework.http.ResponseEntity&lt;com.example.demo.model.dto.ClienteResponseDTO&gt; com.example.demo.controller.ClienteController.crear(com.example.demo.model.dto.ClienteRequestDTO) with 3 errors: [Field error in object 'clienteRequestDTO' on field 'email': rejected value [email-invalido]; codes [Email.clienteRequestDTO.email,Email.email,Email.java.lang.String,Email]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [clienteRequestDTO.email,email]; arguments []; default message [email],[Ljakarta.validation.constraints.Pattern$Flag;@43f50bfe,.*]; default message [El email debe ser válido]] [Field error in object 'clienteRequestDTO' on field 'nombre': rejected value []; codes [Size.clienteRequestDTO.nombre,Size.nombre,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [clienteRequestDTO.nombre,nombre]; arguments []; default message [nombre],100,2]; default message [El nombre debe tener entre 2 y 100 caracteres]] [Field error in object 'clienteRequestDTO' on field 'nombre': rejected value []; codes [NotBlank.clienteRequestDTO.nombre,NotBlank.nombre,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [clienteRequestDTO.nombre,nombre]; arguments []; default message [nombre]]; default message [El nombre no puede estar vacío]] 
+2025-11-21 10:20:34 - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-11-21 10:20:34 - Writing [ErrorResponse(timestamp=2025-11-21T10:20:34.772199400, status=400, error=Validation Error, message=E (truncated)...]
+2025-11-21 10:20:34 - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity&lt;com.example.demo.model.dto.ClienteResponseDTO&gt; com.example.demo.controller.ClienteController.crear(com.example.demo.model.dto.ClienteRequestDTO) with 3 errors: [Field error in object 'clienteRequestDTO' on field 'email': rejected value [email-invalido]; codes [Email.clienteRequestDTO.email,Email.email,Email.java.lang.String,Email]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [clienteRequestDTO.email,email]; arguments []; default message [email],[Ljakarta.validation.constraints.Pattern$Flag;@43f50bfe,.*]; default message [El email debe ser válido]] [Field error in object 'clienteRequestDTO' on field 'nombre': rejected value []; codes [Size.clienteRequestDTO.nombre,Size.nombre,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [clienteRequestDTO.nombre,nombre]; arguments []; default message [nombre],100,2]; default message [El nombre debe tener entre 2 y 100 caracteres]] [Field error in object 'clienteRequestDTO' on field 'nombre': rejected value []; codes [NotBlank.clienteRequestDTO.nombre,NotBlank.nombre,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [clienteRequestDTO.nombre,nombre]; arguments []; default message [nombre]]; default message [El nombre no puede estar vacío]] ]
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /api/v1/clientes
+       Parameters = {}
+          Headers = [Content-Type:&quot;application/json;charset=UTF-8&quot;, Content-Length:&quot;62&quot;]
+             Body = {&quot;nombre&quot;:&quot;&quot;,&quot;email&quot;:&quot;email-invalido&quot;,&quot;telefono&quot;:&quot;0999999999&quot;}
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.demo.controller.ClienteController
+           Method = com.example.demo.controller.ClienteController#crear(ClienteRequestDTO)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = org.springframework.web.bind.MethodArgumentNotValidException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 400
+    Error message = null
+          Headers = [Content-Type:&quot;application/json&quot;]
+     Content type = application/json
+             Body = {&quot;timestamp&quot;:&quot;2025-11-21T10:20:34.7721994&quot;,&quot;status&quot;:400,&quot;error&quot;:&quot;Validation Error&quot;,&quot;message&quot;:&quot;Error de validación en los datos proporcionados&quot;,&quot;path&quot;:&quot;/api/v1/clientes&quot;,&quot;validationErrors&quot;:{&quot;nombre&quot;:&quot;El nombre no puede estar vacío&quot;,&quot;email&quot;:&quot;El email debe ser válido&quot;}}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2025-11-21 10:20:34 - 
+    select
+        c1_0.id,
+        c1_0.activo,
+        c1_0.email,
+        c1_0.fecha_registro,
+        c1_0.nombre,
+        c1_0.telefono 
+    from
+        clientes c1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.activo,
+        c1_0.email,
+        c1_0.fecha_registro,
+        c1_0.nombre,
+        c1_0.telefono 
+    from
+        clientes c1_0
+2025-11-21 10:20:34 - Mapped to com.example.demo.controller.ClienteController#obtenerPorId(Long)
+2025-11-21 10:20:34 - GET /api/v1/clientes/999 - Obtener cliente
+2025-11-21 10:20:34 - Buscando cliente con id: 999
+2025-11-21 10:20:34 - 
+    select
+        c1_0.id,
+        c1_0.activo,
+        c1_0.email,
+        c1_0.fecha_registro,
+        c1_0.nombre,
+        c1_0.telefono 
+    from
+        clientes c1_0 
+    where
+        c1_0.id=?
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.activo,
+        c1_0.email,
+        c1_0.fecha_registro,
+        c1_0.nombre,
+        c1_0.telefono 
+    from
+        clientes c1_0 
+    where
+        c1_0.id=?
+2025-11-21 10:20:34 - Using @ExceptionHandler com.example.demo.exception.GlobalExceptionHandler#handleClienteNotFoundException(ClienteNotFoundException, HttpServletRequest)
+2025-11-21 10:20:34 - Cliente no encontrado: Cliente no encontrado con id: 999
+2025-11-21 10:20:34 - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-11-21 10:20:34 - Writing [ErrorResponse(timestamp=2025-11-21T10:20:34.805905100, status=404, error=Not Found, message=Cliente  (truncated)...]
+2025-11-21 10:20:34 - Resolved [com.example.demo.exception.ClienteNotFoundException: Cliente no encontrado con id: 999]
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/v1/clientes/999
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.demo.controller.ClienteController
+           Method = com.example.demo.controller.ClienteController#obtenerPorId(Long)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = com.example.demo.exception.ClienteNotFoundException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 404
+    Error message = null
+          Headers = [Content-Type:&quot;application/json&quot;]
+     Content type = application/json
+             Body = {&quot;timestamp&quot;:&quot;2025-11-21T10:20:34.8059051&quot;,&quot;status&quot;:404,&quot;error&quot;:&quot;Not Found&quot;,&quot;message&quot;:&quot;Cliente no encontrado con id: 999&quot;,&quot;path&quot;:&quot;/api/v1/clientes/999&quot;,&quot;validationErrors&quot;:null}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2025-11-21 10:20:34 - 
+    select
+        c1_0.id,
+        c1_0.activo,
+        c1_0.email,
+        c1_0.fecha_registro,
+        c1_0.nombre,
+        c1_0.telefono 
+    from
+        clientes c1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.activo,
+        c1_0.email,
+        c1_0.fecha_registro,
+        c1_0.nombre,
+        c1_0.telefono 
+    from
+        clientes c1_0
+2025-11-21 10:20:34 - Mapped to com.example.demo.controller.ClienteController#health()
+2025-11-21 10:20:34 - Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-11-21 10:20:34 - Writing [&quot;Cliente Service is UP&quot;]
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/v1/clientes/health
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.demo.controller.ClienteController
+           Method = com.example.demo.controller.ClienteController#health()
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:&quot;text/plain;charset=UTF-8&quot;, Content-Length:&quot;21&quot;]
+     Content type = text/plain;charset=UTF-8
+             Body = Cliente Service is UP
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2025-11-21 10:20:34 - 
+    select
+        c1_0.id,
+        c1_0.activo,
+        c1_0.email,
+        c1_0.fecha_registro,
+        c1_0.nombre,
+        c1_0.telefono 
+    from
+        clientes c1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.activo,
+        c1_0.email,
+        c1_0.fecha_registro,
+        c1_0.nombre,
+        c1_0.telefono 
+    from
+        clientes c1_0
+2025-11-21 10:20:34 - Mapped to com.example.demo.controller.ClienteController#crear(ClienteRequestDTO)
+2025-11-21 10:20:34 - Read &quot;application/json;charset=UTF-8&quot; to [ClienteRequestDTO(nombre=María García, email=maria@test.com, telefono=0988888888)]
+2025-11-21 10:20:34 - POST /api/v1/clientes - Crear cliente: María García
+2025-11-21 10:20:34 - Creando cliente con nombre: María García
+2025-11-21 10:20:34 - 
+    select
+        c1_0.id 
+    from
+        clientes c1_0 
+    where
+        c1_0.nombre=? 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        c1_0.id 
+    from
+        clientes c1_0 
+    where
+        c1_0.nombre=? 
+    fetch
+        first ? rows only
+2025-11-21 10:20:34 - 
+    insert 
+    into
+        clientes
+        (activo, email, fecha_registro, nombre, telefono, id) 
+    values
+        (?, ?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        clientes
+        (activo, email, fecha_registro, nombre, telefono, id) 
+    values
+        (?, ?, ?, ?, ?, default)
+2025-11-21 10:20:34 - Cliente creado exitosamente con id: 6
+2025-11-21 10:20:34 - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-11-21 10:20:34 - Writing [ClienteResponseDTO(id=6, nombre=María García, email=maria@test.com, telefono=0988888888, fechaRegist (truncated)...]
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /api/v1/clientes
+       Parameters = {}
+          Headers = [Content-Type:&quot;application/json;charset=UTF-8&quot;, Content-Length:&quot;76&quot;]
+             Body = {&quot;nombre&quot;:&quot;María García&quot;,&quot;email&quot;:&quot;maria@test.com&quot;,&quot;telefono&quot;:&quot;0988888888&quot;}
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.demo.controller.ClienteController
+           Method = com.example.demo.controller.ClienteController#crear(ClienteRequestDTO)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 201
+    Error message = null
+          Headers = [Content-Type:&quot;application/json&quot;]
+     Content type = application/json
+             Body = {&quot;id&quot;:6,&quot;nombre&quot;:&quot;María García&quot;,&quot;email&quot;:&quot;maria@test.com&quot;,&quot;telefono&quot;:&quot;0988888888&quot;,&quot;fechaRegistro&quot;:&quot;2025-11-21T10:20:34.8656315&quot;,&quot;activo&quot;:true}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2025-11-21 10:20:34 - 
+    select
+        c1_0.id,
+        c1_0.activo,
+        c1_0.email,
+        c1_0.fecha_registro,
+        c1_0.nombre,
+        c1_0.telefono 
+    from
+        clientes c1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.activo,
+        c1_0.email,
+        c1_0.fecha_registro,
+        c1_0.nombre,
+        c1_0.telefono 
+    from
+        clientes c1_0
+2025-11-21 10:20:34 - 
+    delete 
+    from
+        clientes 
+    where
+        id=?
+Hibernate: 
+    delete 
+    from
+        clientes 
+    where
+        id=?
+2025-11-21 10:20:34 - 
+    insert 
+    into
+        clientes
+        (activo, email, fecha_registro, nombre, telefono, id) 
+    values
+        (?, ?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        clientes
+        (activo, email, fecha_registro, nombre, telefono, id) 
+    values
+        (?, ?, ?, ?, ?, default)
+2025-11-21 10:20:34 - Mapped to com.example.demo.controller.ClienteController#crear(ClienteRequestDTO)
+2025-11-21 10:20:34 - Read &quot;application/json;charset=UTF-8&quot; to [ClienteRequestDTO(nombre=Juan Duplicado, email=otro@test.com, telefono=0988888888)]
+2025-11-21 10:20:34 - POST /api/v1/clientes - Crear cliente: Juan Duplicado
+2025-11-21 10:20:34 - Creando cliente con nombre: Juan Duplicado
+2025-11-21 10:20:34 - 
+    select
+        c1_0.id 
+    from
+        clientes c1_0 
+    where
+        c1_0.nombre=? 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        c1_0.id 
+    from
+        clientes c1_0 
+    where
+        c1_0.nombre=? 
+    fetch
+        first ? rows only
+2025-11-21 10:20:34 - Ya existe un cliente con el nombre: Juan Duplicado
+2025-11-21 10:20:34 - Using @ExceptionHandler com.example.demo.exception.GlobalExceptionHandler#handleClienteAlreadyExistsException(ClienteAlreadyExistsException, HttpServletRequest)
+2025-11-21 10:20:34 - Cliente ya existe: Ya existe un cliente con el nombre: Juan Duplicado
+2025-11-21 10:20:34 - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-11-21 10:20:34 - Writing [ErrorResponse(timestamp=2025-11-21T10:20:34.888793200, status=409, error=Conflict, message=Ya existe (truncated)...]
+2025-11-21 10:20:34 - Resolved [com.example.demo.exception.ClienteAlreadyExistsException: Ya existe un cliente con el nombre: Juan Duplicado]
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /api/v1/clientes
+       Parameters = {}
+          Headers = [Content-Type:&quot;application/json;charset=UTF-8&quot;, Content-Length:&quot;75&quot;]
+             Body = {&quot;nombre&quot;:&quot;Juan Duplicado&quot;,&quot;email&quot;:&quot;otro@test.com&quot;,&quot;telefono&quot;:&quot;0988888888&quot;}
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.demo.controller.ClienteController
+           Method = com.example.demo.controller.ClienteController#crear(ClienteRequestDTO)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = com.example.demo.exception.ClienteAlreadyExistsException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 409
+    Error message = null
+          Headers = [Content-Type:&quot;application/json&quot;]
+     Content type = application/json
+             Body = {&quot;timestamp&quot;:&quot;2025-11-21T10:20:34.8887932&quot;,&quot;status&quot;:409,&quot;error&quot;:&quot;Conflict&quot;,&quot;message&quot;:&quot;Ya existe un cliente con el nombre: Juan Duplicado&quot;,&quot;path&quot;:&quot;/api/v1/clientes&quot;,&quot;validationErrors&quot;:null}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2025-11-21 10:20:34 - 
+    select
+        c1_0.id,
+        c1_0.activo,
+        c1_0.email,
+        c1_0.fecha_registro,
+        c1_0.nombre,
+        c1_0.telefono 
+    from
+        clientes c1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.activo,
+        c1_0.email,
+        c1_0.fecha_registro,
+        c1_0.nombre,
+        c1_0.telefono 
+    from
+        clientes c1_0
+2025-11-21 10:20:34 - 
+    delete 
+    from
+        clientes 
+    where
+        id=?
+Hibernate: 
+    delete 
+    from
+        clientes 
+    where
+        id=?
+2025-11-21 10:20:34 - 
+    insert 
+    into
+        clientes
+        (activo, email, fecha_registro, nombre, telefono, id) 
+    values
+        (?, ?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        clientes
+        (activo, email, fecha_registro, nombre, telefono, id) 
+    values
+        (?, ?, ?, ?, ?, default)
+2025-11-21 10:20:34 - Mapped to com.example.demo.controller.ClienteController#obtenerPorId(Long)
+2025-11-21 10:20:34 - GET /api/v1/clientes/8 - Obtener cliente
+2025-11-21 10:20:34 - Buscando cliente con id: 8
+2025-11-21 10:20:34 - 
+    select
+        c1_0.id,
+        c1_0.activo,
+        c1_0.email,
+        c1_0.fecha_registro,
+        c1_0.nombre,
+        c1_0.telefono 
+    from
+        clientes c1_0 
+    where
+        c1_0.id=?
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.activo,
+        c1_0.email,
+        c1_0.fecha_registro,
+        c1_0.nombre,
+        c1_0.telefono 
+    from
+        clientes c1_0 
+    where
+        c1_0.id=?
+2025-11-21 10:20:34 - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-11-21 10:20:34 - Writing [ClienteResponseDTO(id=8, nombre=Pedro López, email=pedro@test.com, telefono=0977777777, fechaRegistr (truncated)...]
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/v1/clientes/8
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.demo.controller.ClienteController
+           Method = com.example.demo.controller.ClienteController#obtenerPorId(Long)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:&quot;application/json&quot;]
+     Content type = application/json
+             Body = {&quot;id&quot;:8,&quot;nombre&quot;:&quot;Pedro López&quot;,&quot;email&quot;:&quot;pedro@test.com&quot;,&quot;telefono&quot;:&quot;0977777777&quot;,&quot;fechaRegistro&quot;:&quot;2025-11-21T10:20:34.902335&quot;,&quot;activo&quot;:true}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2025-11-21 10:20:34 - 
+    select
+        c1_0.id,
+        c1_0.activo,
+        c1_0.email,
+        c1_0.fecha_registro,
+        c1_0.nombre,
+        c1_0.telefono 
+    from
+        clientes c1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.activo,
+        c1_0.email,
+        c1_0.fecha_registro,
+        c1_0.nombre,
+        c1_0.telefono 
+    from
+        clientes c1_0
+2025-11-21 10:20:34 - 
+    delete 
+    from
+        clientes 
+    where
+        id=?
+Hibernate: 
+    delete 
+    from
+        clientes 
+    where
+        id=?
+2025-11-21 10:20:34 - 
+    insert 
+    into
+        clientes
+        (activo, email, fecha_registro, nombre, telefono, id) 
+    values
+        (?, ?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        clientes
+        (activo, email, fecha_registro, nombre, telefono, id) 
+    values
+        (?, ?, ?, ?, ?, default)
+2025-11-21 10:20:34 - Mapped to com.example.demo.controller.ClienteController#obtenerPorNombre(String)
+2025-11-21 10:20:34 - GET /api/v1/clientes/buscar?nombre=Ana Martínez - Buscar cliente
+2025-11-21 10:20:34 - Buscando cliente con nombre: Ana Martínez
+2025-11-21 10:20:34 - 
+    select
+        c1_0.id,
+        c1_0.activo,
+        c1_0.email,
+        c1_0.fecha_registro,
+        c1_0.nombre,
+        c1_0.telefono 
+    from
+        clientes c1_0 
+    where
+        c1_0.nombre=?
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.activo,
+        c1_0.email,
+        c1_0.fecha_registro,
+        c1_0.nombre,
+        c1_0.telefono 
+    from
+        clientes c1_0 
+    where
+        c1_0.nombre=?
+2025-11-21 10:20:34 - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-11-21 10:20:34 - Writing [ClienteResponseDTO(id=9, nombre=Ana Martínez, email=ana@test.com, telefono=0966666666, fechaRegistro (truncated)...]
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/v1/clientes/buscar
+       Parameters = {nombre=[Ana Martínez]}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.demo.controller.ClienteController
+           Method = com.example.demo.controller.ClienteController#obtenerPorNombre(String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:&quot;application/json&quot;]
+     Content type = application/json
+             Body = {&quot;id&quot;:9,&quot;nombre&quot;:&quot;Ana Martínez&quot;,&quot;email&quot;:&quot;ana@test.com&quot;,&quot;telefono&quot;:&quot;0966666666&quot;,&quot;fechaRegistro&quot;:&quot;2025-11-21T10:20:34.923629&quot;,&quot;activo&quot;:true}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2025-11-21 10:20:34 - 
+    select
+        c1_0.id,
+        c1_0.activo,
+        c1_0.email,
+        c1_0.fecha_registro,
+        c1_0.nombre,
+        c1_0.telefono 
+    from
+        clientes c1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.activo,
+        c1_0.email,
+        c1_0.fecha_registro,
+        c1_0.nombre,
+        c1_0.telefono 
+    from
+        clientes c1_0
+2025-11-21 10:20:34 - 
+    delete 
+    from
+        clientes 
+    where
+        id=?
+Hibernate: 
+    delete 
+    from
+        clientes 
+    where
+        id=?
+2025-11-21 10:20:34 - 
+    insert 
+    into
+        clientes
+        (activo, email, fecha_registro, nombre, telefono, id) 
+    values
+        (?, ?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        clientes
+        (activo, email, fecha_registro, nombre, telefono, id) 
+    values
+        (?, ?, ?, ?, ?, default)
+2025-11-21 10:20:34 - 
+    insert 
+    into
+        clientes
+        (activo, email, fecha_registro, nombre, telefono, id) 
+    values
+        (?, ?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        clientes
+        (activo, email, fecha_registro, nombre, telefono, id) 
+    values
+        (?, ?, ?, ?, ?, default)
+2025-11-21 10:20:34 - Mapped to com.example.demo.controller.ClienteController#listar()
+2025-11-21 10:20:34 - GET /api/v1/clientes - Listar todos los clientes
+2025-11-21 10:20:34 - Listando todos los clientes activos
+2025-11-21 10:20:34 - 
+    select
+        c1_0.id,
+        c1_0.activo,
+        c1_0.email,
+        c1_0.fecha_registro,
+        c1_0.nombre,
+        c1_0.telefono 
+    from
+        clientes c1_0 
+    where
+        c1_0.activo=?
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.activo,
+        c1_0.email,
+        c1_0.fecha_registro,
+        c1_0.nombre,
+        c1_0.telefono 
+    from
+        clientes c1_0 
+    where
+        c1_0.activo=?
+2025-11-21 10:20:34 - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-11-21 10:20:34 - Writing [[ClienteResponseDTO(id=10, nombre=Cliente 1, email=cliente1@test.com, telefono=0999999999, fechaRegi (truncated)...]
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/v1/clientes
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.demo.controller.ClienteController
+           Method = com.example.demo.controller.ClienteController#listar()
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:&quot;application/json&quot;]
+     Content type = application/json
+             Body = [{&quot;id&quot;:10,&quot;nombre&quot;:&quot;Cliente 1&quot;,&quot;email&quot;:&quot;cliente1@test.com&quot;,&quot;telefono&quot;:&quot;0999999999&quot;,&quot;fechaRegistro&quot;:&quot;2025-11-21T10:20:34.935875&quot;,&quot;activo&quot;:true},{&quot;id&quot;:11,&quot;nombre&quot;:&quot;Cliente 2&quot;,&quot;email&quot;:&quot;cliente2@test.com&quot;,&quot;telefono&quot;:&quot;0988888888&quot;,&quot;fechaRegistro&quot;:&quot;2025-11-21T10:20:34.937882&quot;,&quot;activo&quot;:true}]
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2025-11-21 10:20:34 - 
+    select
+        c1_0.id,
+        c1_0.activo,
+        c1_0.email,
+        c1_0.fecha_registro,
+        c1_0.nombre,
+        c1_0.telefono 
+    from
+        clientes c1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.activo,
+        c1_0.email,
+        c1_0.fecha_registro,
+        c1_0.nombre,
+        c1_0.telefono 
+    from
+        clientes c1_0
+2025-11-21 10:20:34 - 
+    delete 
+    from
+        clientes 
+    where
+        id=?
+Hibernate: 
+    delete 
+    from
+        clientes 
+    where
+        id=?
+2025-11-21 10:20:34 - 
+    delete 
+    from
+        clientes 
+    where
+        id=?
+Hibernate: 
+    delete 
+    from
+        clientes 
+    where
+        id=?
+2025-11-21 10:20:34 - 
+    insert 
+    into
+        clientes
+        (activo, email, fecha_registro, nombre, telefono, id) 
+    values
+        (?, ?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        clientes
+        (activo, email, fecha_registro, nombre, telefono, id) 
+    values
+        (?, ?, ?, ?, ?, default)
+2025-11-21 10:20:34 - Mapped to com.example.demo.controller.ClienteController#actualizar(Long, ClienteRequestDTO)
+2025-11-21 10:20:34 - Read &quot;application/json;charset=UTF-8&quot; to [ClienteRequestDTO(nombre=Cliente Actualizado, email=actualizado@test.com, telefono=0977777777)]
+2025-11-21 10:20:34 - PUT /api/v1/clientes/12 - Actualizar cliente
+2025-11-21 10:20:34 - Actualizando cliente con id: 12
+2025-11-21 10:20:34 - 
+    select
+        c1_0.id,
+        c1_0.activo,
+        c1_0.email,
+        c1_0.fecha_registro,
+        c1_0.nombre,
+        c1_0.telefono 
+    from
+        clientes c1_0 
+    where
+        c1_0.id=?
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.activo,
+        c1_0.email,
+        c1_0.fecha_registro,
+        c1_0.nombre,
+        c1_0.telefono 
+    from
+        clientes c1_0 
+    where
+        c1_0.id=?
+2025-11-21 10:20:34 - 
+    select
+        c1_0.id 
+    from
+        clientes c1_0 
+    where
+        c1_0.nombre=? 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        c1_0.id 
+    from
+        clientes c1_0 
+    where
+        c1_0.nombre=? 
+    fetch
+        first ? rows only
+2025-11-21 10:20:34 - Cliente actualizado exitosamente con id: 12
+2025-11-21 10:20:34 - 
+    update
+        clientes 
+    set
+        activo=?,
+        email=?,
+        nombre=?,
+        telefono=? 
+    where
+        id=?
+Hibernate: 
+    update
+        clientes 
+    set
+        activo=?,
+        email=?,
+        nombre=?,
+        telefono=? 
+    where
+        id=?
+2025-11-21 10:20:34 - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-11-21 10:20:34 - Writing [ClienteResponseDTO(id=12, nombre=Cliente Actualizado, email=actualizado@test.com, telefono=097777777 (truncated)...]
+
+MockHttpServletRequest:
+      HTTP Method = PUT
+      Request URI = /api/v1/clientes/12
+       Parameters = {}
+          Headers = [Content-Type:&quot;application/json;charset=UTF-8&quot;, Content-Length:&quot;87&quot;]
+             Body = {&quot;nombre&quot;:&quot;Cliente Actualizado&quot;,&quot;email&quot;:&quot;actualizado@test.com&quot;,&quot;telefono&quot;:&quot;0977777777&quot;}
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.demo.controller.ClienteController
+           Method = com.example.demo.controller.ClienteController#actualizar(Long, ClienteRequestDTO)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:&quot;application/json&quot;]
+     Content type = application/json
+             Body = {&quot;id&quot;:12,&quot;nombre&quot;:&quot;Cliente Actualizado&quot;,&quot;email&quot;:&quot;actualizado@test.com&quot;,&quot;telefono&quot;:&quot;0977777777&quot;,&quot;fechaRegistro&quot;:&quot;2025-11-21T10:20:34.953999&quot;,&quot;activo&quot;:true}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2025-11-21 10:20:34 - 
+    select
+        c1_0.id,
+        c1_0.activo,
+        c1_0.email,
+        c1_0.fecha_registro,
+        c1_0.nombre,
+        c1_0.telefono 
+    from
+        clientes c1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.activo,
+        c1_0.email,
+        c1_0.fecha_registro,
+        c1_0.nombre,
+        c1_0.telefono 
+    from
+        clientes c1_0
+2025-11-21 10:20:34 - 
+    delete 
+    from
+        clientes 
+    where
+        id=?
+Hibernate: 
+    delete 
+    from
+        clientes 
+    where
+        id=?
+2025-11-21 10:20:34 - 
+    insert 
+    into
+        clientes
+        (activo, email, fecha_registro, nombre, telefono, id) 
+    values
+        (?, ?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        clientes
+        (activo, email, fecha_registro, nombre, telefono, id) 
+    values
+        (?, ?, ?, ?, ?, default)
+2025-11-21 10:20:34 - Mapped to com.example.demo.controller.ClienteController#eliminar(Long)
+2025-11-21 10:20:34 - DELETE /api/v1/clientes/13 - Eliminar cliente
+2025-11-21 10:20:34 - Eliminando cliente con id: 13
+2025-11-21 10:20:34 - 
+    select
+        c1_0.id,
+        c1_0.activo,
+        c1_0.email,
+        c1_0.fecha_registro,
+        c1_0.nombre,
+        c1_0.telefono 
+    from
+        clientes c1_0 
+    where
+        c1_0.id=?
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.activo,
+        c1_0.email,
+        c1_0.fecha_registro,
+        c1_0.nombre,
+        c1_0.telefono 
+    from
+        clientes c1_0 
+    where
+        c1_0.id=?
+2025-11-21 10:20:34 - Cliente eliminado (desactivado) exitosamente con id: 13
+2025-11-21 10:20:34 - 
+    update
+        clientes 
+    set
+        activo=?,
+        email=?,
+        nombre=?,
+        telefono=? 
+    where
+        id=?
+Hibernate: 
+    update
+        clientes 
+    set
+        activo=?,
+        email=?,
+        nombre=?,
+        telefono=? 
+    where
+        id=?
+2025-11-21 10:20:34 - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-11-21 10:20:34 - Nothing to write: null body
+
+MockHttpServletRequest:
+      HTTP Method = DELETE
+      Request URI = /api/v1/clientes/13
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.demo.controller.ClienteController
+           Method = com.example.demo.controller.ClienteController#eliminar(Long)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 204
+    Error message = null
+          Headers = []
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2025-11-21 10:20:34 - 
+    select
+        c1_0.id,
+        c1_0.activo,
+        c1_0.email,
+        c1_0.fecha_registro,
+        c1_0.nombre,
+        c1_0.telefono 
+    from
+        clientes c1_0 
+    where
+        c1_0.id=?
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.activo,
+        c1_0.email,
+        c1_0.fecha_registro,
+        c1_0.nombre,
+        c1_0.telefono 
+    from
+        clientes c1_0 
+    where
+        c1_0.id=?
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.5</a> at 21 nov 2025 10:20:35</p>
+</div>
+</div>
+</body>
+</html>

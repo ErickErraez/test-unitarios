@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.demo.service.ClienteServiceTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2025-11-21T15:20:34" hostname="LAPTOP-ST6CFLS6" time="0.637">
+  <properties/>
+  <testcase name="Debe crear cliente cuando datos son válidos" classname="com.example.demo.service.ClienteServiceTest" time="0.584"/>
+  <testcase name="Debe actualizar cliente existente" classname="com.example.demo.service.ClienteServiceTest" time="0.009"/>
+  <testcase name="Debe obtener cliente por nombre" classname="com.example.demo.service.ClienteServiceTest" time="0.003"/>
+  <testcase name="Debe lanzar excepción cuando cliente ya existe" classname="com.example.demo.service.ClienteServiceTest" time="0.009"/>
+  <testcase name="Debe eliminar cliente existente" classname="com.example.demo.service.ClienteServiceTest" time="0.004"/>
+  <testcase name="Debe lanzar excepción cuando cliente no existe" classname="com.example.demo.service.ClienteServiceTest" time="0.003"/>
+  <testcase name="Debe listar todos los clientes activos" classname="com.example.demo.service.ClienteServiceTest" time="0.003"/>
+  <testcase name="Debe eliminar permanentemente un cliente" classname="com.example.demo.service.ClienteServiceTest" time="0.008"/>
+  <system-out><![CDATA[2025-11-21 10:20:35 - Creando cliente con nombre: Juan Pérez
+2025-11-21 10:20:35 - Cliente creado exitosamente con id: 1
+2025-11-21 10:20:35 - Actualizando cliente con id: 1
+2025-11-21 10:20:35 - Cliente actualizado exitosamente con id: 1
+2025-11-21 10:20:35 - Buscando cliente con nombre: Juan Pérez
+2025-11-21 10:20:35 - Creando cliente con nombre: Juan Pérez
+2025-11-21 10:20:35 - Ya existe un cliente con el nombre: Juan Pérez
+2025-11-21 10:20:35 - Eliminando cliente con id: 1
+2025-11-21 10:20:35 - Cliente eliminado (desactivado) exitosamente con id: 1
+2025-11-21 10:20:35 - Buscando cliente con id: 99
+2025-11-21 10:20:35 - Listando todos los clientes activos
+2025-11-21 10:20:35 - Eliminando permanentemente cliente con id: 1
+2025-11-21 10:20:35 - Cliente eliminado permanentemente con id: 1
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
