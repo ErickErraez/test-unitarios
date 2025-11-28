@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - SecurityTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>SecurityTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.example.demo.security.html">com.example.demo.security</a> &gt; SecurityTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">7</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.578s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testEmailValidation()</td>
+<td class="success">0.030s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testEmptyFieldsValidation()</td>
+<td class="success">0.028s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testFieldLengthValidation()</td>
+<td class="success">0.029s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testNullFieldsValidation()</td>
+<td class="success">0.375s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSQLInjectionPrevention()</td>
+<td class="success">0.030s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSpecialCharactersValidation()</td>
+<td class="success">0.056s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testXSSPrevention()</td>
+<td class="success">0.030s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2025-11-28 11:13:27 - Could not detect default configuration classes for test class [com.example.demo.security.SecurityTest]: SecurityTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-11-28 11:13:27 - Found @SpringBootConfiguration com.example.demo.DemoApplication for test class com.example.demo.security.SecurityTest
+
+&#x1f512; INICIANDO PRUEBA DE SEGURIDAD
+❌ Test: Null Fields Validation
+2025-11-28 11:13:27 - Mapped to com.example.demo.controller.ClienteController#crear(ClienteRequestDTO)
+2025-11-28 11:13:27 - Read &quot;application/json;charset=UTF-8&quot; to [ClienteRequestDTO(nombre=null, email=null, telefono=null)]
+2025-11-28 11:13:28 - Using @ExceptionHandler com.example.demo.exception.GlobalExceptionHandler#handleValidationExceptions(MethodArgumentNotValidException, HttpServletRequest)
+2025-11-28 11:13:28 - Error de validación: Validation failed for argument [0] in public org.springframework.http.ResponseEntity&lt;com.example.demo.model.dto.ClienteResponseDTO&gt; com.example.demo.controller.ClienteController.crear(com.example.demo.model.dto.ClienteRequestDTO) with 2 errors: [Field error in object 'clienteRequestDTO' on field 'email': rejected value [null]; codes [NotBlank.clienteRequestDTO.email,NotBlank.email,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [clienteRequestDTO.email,email]; arguments []; default message [email]]; default message [El email no puede estar vacío]] [Field error in object 'clienteRequestDTO' on field 'nombre': rejected value [null]; codes [NotBlank.clienteRequestDTO.nombre,NotBlank.nombre,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [clienteRequestDTO.nombre,nombre]; arguments []; default message [nombre]]; default message [El nombre no puede estar vacío]] 
+2025-11-28 11:13:28 - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-11-28 11:13:28 - Writing [ErrorResponse(timestamp=2025-11-28T11:13:28.106073500, status=400, error=Validation Error, message=E (truncated)...]
+2025-11-28 11:13:28 - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity&lt;com.example.demo.model.dto.ClienteResponseDTO&gt; com.example.demo.controller.ClienteController.crear(com.example.demo.model.dto.ClienteRequestDTO) with 2 errors: [Field error in object 'clienteRequestDTO' on field 'email': rejected value [null]; codes [NotBlank.clienteRequestDTO.email,NotBlank.email,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [clienteRequestDTO.email,email]; arguments []; default message [email]]; default message [El email no puede estar vacío]] [Field error in object 'clienteRequestDTO' on field 'nombre': rejected value [null]; codes [NotBlank.clienteRequestDTO.nombre,NotBlank.nombre,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [clienteRequestDTO.nombre,nombre]; arguments []; default message [nombre]]; default message [El nombre no puede estar vacío]] ]
+✅ Null validation: Sistema rechaza campos null correctamente
+
+&#x1f512; INICIANDO PRUEBA DE SEGURIDAD
+&#x1f523; Test: Special Characters Validation
+2025-11-28 11:13:28 - Mapped to com.example.demo.controller.ClienteController#crear(ClienteRequestDTO)
+2025-11-28 11:13:28 - Read &quot;application/json;charset=UTF-8&quot; to [ClienteRequestDTO(nombre=Test&lt;script&gt;alert('XSS')&lt;/script&gt;, email=test@test.com, telefono=null)]
+2025-11-28 11:13:28 - Using @ExceptionHandler com.example.demo.exception.GlobalExceptionHandler#handleValidationExceptions(MethodArgumentNotValidException, HttpServletRequest)
+2025-11-28 11:13:28 - Error de validación: Validation failed for argument [0] in public org.springframework.http.ResponseEntity&lt;com.example.demo.model.dto.ClienteResponseDTO&gt; com.example.demo.controller.ClienteController.crear(com.example.demo.model.dto.ClienteRequestDTO): [Field error in object 'clienteRequestDTO' on field 'nombre': rejected value [Test&lt;script&gt;alert('XSS')&lt;/script&gt;]; codes [Pattern.clienteRequestDTO.nombre,Pattern.nombre,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [clienteRequestDTO.nombre,nombre]; arguments []; default message [nombre],[Ljakarta.validation.constraints.Pattern$Flag;@1ef6977b,^[a-zA-ZáéíóúÁÉÍÓÚñÑ ]+$]; default message [El nombre solo puede contener letras y espacios]] 
+2025-11-28 11:13:28 - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-11-28 11:13:28 - Writing [ErrorResponse(timestamp=2025-11-28T11:13:28.192761600, status=400, error=Validation Error, message=E (truncated)...]
+2025-11-28 11:13:28 - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity&lt;com.example.demo.model.dto.ClienteResponseDTO&gt; com.example.demo.controller.ClienteController.crear(com.example.demo.model.dto.ClienteRequestDTO): [Field error in object 'clienteRequestDTO' on field 'nombre': rejected value [Test&lt;script&gt;alert('XSS')&lt;/script&gt;]; codes [Pattern.clienteRequestDTO.nombre,Pattern.nombre,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [clienteRequestDTO.nombre,nombre]; arguments []; default message [nombre],[Ljakarta.validation.constraints.Pattern$Flag;@1ef6977b,^[a-zA-ZáéíóúÁÉÍÓÚñÑ ]+$]; default message [El nombre solo puede contener letras y espacios]] ]
+✅ Special chars validation: Caracteres peligrosos rechazados correctamente
+
+&#x1f512; INICIANDO PRUEBA DE SEGURIDAD
+&#x1f489; Test: SQL Injection Protection
+2025-11-28 11:13:28 - Mapped to com.example.demo.controller.ClienteController#crear(ClienteRequestDTO)
+2025-11-28 11:13:28 - Read &quot;application/json;charset=UTF-8&quot; to [ClienteRequestDTO(nombre='; DROP TABLE clientes; --, email=hacker@test.com, telefono=null)]
+2025-11-28 11:13:28 - Using @ExceptionHandler com.example.demo.exception.GlobalExceptionHandler#handleValidationExceptions(MethodArgumentNotValidException, HttpServletRequest)
+2025-11-28 11:13:28 - Error de validación: Validation failed for argument [0] in public org.springframework.http.ResponseEntity&lt;com.example.demo.model.dto.ClienteResponseDTO&gt; com.example.demo.controller.ClienteController.crear(com.example.demo.model.dto.ClienteRequestDTO): [Field error in object 'clienteRequestDTO' on field 'nombre': rejected value ['; DROP TABLE clientes; --]; codes [Pattern.clienteRequestDTO.nombre,Pattern.nombre,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [clienteRequestDTO.nombre,nombre]; arguments []; default message [nombre],[Ljakarta.validation.constraints.Pattern$Flag;@1ef6977b,^[a-zA-ZáéíóúÁÉÍÓÚñÑ ]+$]; default message [El nombre solo puede contener letras y espacios]] 
+2025-11-28 11:13:28 - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-11-28 11:13:28 - Writing [ErrorResponse(timestamp=2025-11-28T11:13:28.223184700, status=400, error=Validation Error, message=E (truncated)...]
+2025-11-28 11:13:28 - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity&lt;com.example.demo.model.dto.ClienteResponseDTO&gt; com.example.demo.controller.ClienteController.crear(com.example.demo.model.dto.ClienteRequestDTO): [Field error in object 'clienteRequestDTO' on field 'nombre': rejected value ['; DROP TABLE clientes; --]; codes [Pattern.clienteRequestDTO.nombre,Pattern.nombre,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [clienteRequestDTO.nombre,nombre]; arguments []; default message [nombre],[Ljakarta.validation.constraints.Pattern$Flag;@1ef6977b,^[a-zA-ZáéíóúÁÉÍÓÚñÑ ]+$]; default message [El nombre solo puede contener letras y espacios]] ]
+✅ SQL Injection prevención: BLOQUEADO por validación @Pattern
+
+&#x1f512; INICIANDO PRUEBA DE SEGURIDAD
+&#x1f4e7; Test: Email Validation
+2025-11-28 11:13:28 - Mapped to com.example.demo.controller.ClienteController#crear(ClienteRequestDTO)
+2025-11-28 11:13:28 - Read &quot;application/json;charset=UTF-8&quot; to [ClienteRequestDTO(nombre=Test User, email=invalid-email-format, telefono=null)]
+2025-11-28 11:13:28 - Using @ExceptionHandler com.example.demo.exception.GlobalExceptionHandler#handleValidationExceptions(MethodArgumentNotValidException, HttpServletRequest)
+2025-11-28 11:13:28 - Error de validación: Validation failed for argument [0] in public org.springframework.http.ResponseEntity&lt;com.example.demo.model.dto.ClienteResponseDTO&gt; com.example.demo.controller.ClienteController.crear(com.example.demo.model.dto.ClienteRequestDTO): [Field error in object 'clienteRequestDTO' on field 'email': rejected value [invalid-email-format]; codes [Email.clienteRequestDTO.email,Email.email,Email.java.lang.String,Email]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [clienteRequestDTO.email,email]; arguments []; default message [email],[Ljakarta.validation.constraints.Pattern$Flag;@40941b54,.*]; default message [El email debe ser válido]] 
+2025-11-28 11:13:28 - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-11-28 11:13:28 - Writing [ErrorResponse(timestamp=2025-11-28T11:13:28.256378200, status=400, error=Validation Error, message=E (truncated)...]
+2025-11-28 11:13:28 - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity&lt;com.example.demo.model.dto.ClienteResponseDTO&gt; com.example.demo.controller.ClienteController.crear(com.example.demo.model.dto.ClienteRequestDTO): [Field error in object 'clienteRequestDTO' on field 'email': rejected value [invalid-email-format]; codes [Email.clienteRequestDTO.email,Email.email,Email.java.lang.String,Email]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [clienteRequestDTO.email,email]; arguments []; default message [email],[Ljakarta.validation.constraints.Pattern$Flag;@40941b54,.*]; default message [El email debe ser válido]] ]
+✅ Email validation: Sistema valida formato correctamente
+
+&#x1f512; INICIANDO PRUEBA DE SEGURIDAD
+&#x1f6ab; Test: Empty Fields Validation
+2025-11-28 11:13:28 - Mapped to com.example.demo.controller.ClienteController#crear(ClienteRequestDTO)
+2025-11-28 11:13:28 - Read &quot;application/json;charset=UTF-8&quot; to [ClienteRequestDTO(nombre=, email=valid@test.com, telefono=null)]
+2025-11-28 11:13:28 - Using @ExceptionHandler com.example.demo.exception.GlobalExceptionHandler#handleValidationExceptions(MethodArgumentNotValidException, HttpServletRequest)
+2025-11-28 11:13:28 - Error de validación: Validation failed for argument [0] in public org.springframework.http.ResponseEntity&lt;com.example.demo.model.dto.ClienteResponseDTO&gt; com.example.demo.controller.ClienteController.crear(com.example.demo.model.dto.ClienteRequestDTO) with 3 errors: [Field error in object 'clienteRequestDTO' on field 'nombre': rejected value []; codes [Size.clienteRequestDTO.nombre,Size.nombre,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [clienteRequestDTO.nombre,nombre]; arguments []; default message [nombre],100,2]; default message [El nombre debe tener entre 2 y 100 caracteres]] [Field error in object 'clienteRequestDTO' on field 'nombre': rejected value []; codes [Pattern.clienteRequestDTO.nombre,Pattern.nombre,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [clienteRequestDTO.nombre,nombre]; arguments []; default message [nombre],[Ljakarta.validation.constraints.Pattern$Flag;@1ef6977b,^[a-zA-ZáéíóúÁÉÍÓÚñÑ ]+$]; default message [El nombre solo puede contener letras y espacios]] [Field error in object 'clienteRequestDTO' on field 'nombre': rejected value []; codes [NotBlank.clienteRequestDTO.nombre,NotBlank.nombre,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [clienteRequestDTO.nombre,nombre]; arguments []; default message [nombre]]; default message [El nombre no puede estar vacío]] 
+2025-11-28 11:13:28 - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-11-28 11:13:28 - Writing [ErrorResponse(timestamp=2025-11-28T11:13:28.292547500, status=400, error=Validation Error, message=E (truncated)...]
+2025-11-28 11:13:28 - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity&lt;com.example.demo.model.dto.ClienteResponseDTO&gt; com.example.demo.controller.ClienteController.crear(com.example.demo.model.dto.ClienteRequestDTO) with 3 errors: [Field error in object 'clienteRequestDTO' on field 'nombre': rejected value []; codes [Size.clienteRequestDTO.nombre,Size.nombre,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [clienteRequestDTO.nombre,nombre]; arguments []; default message [nombre],100,2]; default message [El nombre debe tener entre 2 y 100 caracteres]] [Field error in object 'clienteRequestDTO' on field 'nombre': rejected value []; codes [Pattern.clienteRequestDTO.nombre,Pattern.nombre,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [clienteRequestDTO.nombre,nombre]; arguments []; default message [nombre],[Ljakarta.validation.constraints.Pattern$Flag;@1ef6977b,^[a-zA-ZáéíóúÁÉÍÓÚñÑ ]+$]; default message [El nombre solo puede contener letras y espacios]] [Field error in object 'clienteRequestDTO' on field 'nombre': rejected value []; codes [NotBlank.clienteRequestDTO.nombre,NotBlank.nombre,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [clienteRequestDTO.nombre,nombre]; arguments []; default message [nombre]]; default message [El nombre no puede estar vacío]] ]
+✅ Empty fields validation: Sistema rechaza campos vacíos correctamente
+
+&#x1f512; INICIANDO PRUEBA DE SEGURIDAD
+&#x1f6e1; Test: XSS Protection
+2025-11-28 11:13:28 - Mapped to com.example.demo.controller.ClienteController#crear(ClienteRequestDTO)
+2025-11-28 11:13:28 - Read &quot;application/json;charset=UTF-8&quot; to [ClienteRequestDTO(nombre=&lt;script&gt;alert('XSS')&lt;/script&gt;, email=xss@test.com, telefono=null)]
+2025-11-28 11:13:28 - Using @ExceptionHandler com.example.demo.exception.GlobalExceptionHandler#handleValidationExceptions(MethodArgumentNotValidException, HttpServletRequest)
+2025-11-28 11:13:28 - Error de validación: Validation failed for argument [0] in public org.springframework.http.ResponseEntity&lt;com.example.demo.model.dto.ClienteResponseDTO&gt; com.example.demo.controller.ClienteController.crear(com.example.demo.model.dto.ClienteRequestDTO): [Field error in object 'clienteRequestDTO' on field 'nombre': rejected value [&lt;script&gt;alert('XSS')&lt;/script&gt;]; codes [Pattern.clienteRequestDTO.nombre,Pattern.nombre,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [clienteRequestDTO.nombre,nombre]; arguments []; default message [nombre],[Ljakarta.validation.constraints.Pattern$Flag;@1ef6977b,^[a-zA-ZáéíóúÁÉÍÓÚñÑ ]+$]; default message [El nombre solo puede contener letras y espacios]] 
+2025-11-28 11:13:28 - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-11-28 11:13:28 - Writing [ErrorResponse(timestamp=2025-11-28T11:13:28.323552100, status=400, error=Validation Error, message=E (truncated)...]
+2025-11-28 11:13:28 - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity&lt;com.example.demo.model.dto.ClienteResponseDTO&gt; com.example.demo.controller.ClienteController.crear(com.example.demo.model.dto.ClienteRequestDTO): [Field error in object 'clienteRequestDTO' on field 'nombre': rejected value [&lt;script&gt;alert('XSS')&lt;/script&gt;]; codes [Pattern.clienteRequestDTO.nombre,Pattern.nombre,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [clienteRequestDTO.nombre,nombre]; arguments []; default message [nombre],[Ljakarta.validation.constraints.Pattern$Flag;@1ef6977b,^[a-zA-ZáéíóúÁÉÍÓÚñÑ ]+$]; default message [El nombre solo puede contener letras y espacios]] ]
+✅ XSS Prevention: BLOQUEADO por validación @Pattern
+
+&#x1f512; INICIANDO PRUEBA DE SEGURIDAD
+&#x1f4cf; Test: Field Length Validation
+2025-11-28 11:13:28 - Mapped to com.example.demo.controller.ClienteController#crear(ClienteRequestDTO)
+2025-11-28 11:13:28 - Read &quot;application/json;charset=UTF-8&quot; to [ClienteRequestDTO(nombre=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA (truncated)...]
+2025-11-28 11:13:28 - Using @ExceptionHandler com.example.demo.exception.GlobalExceptionHandler#handleValidationExceptions(MethodArgumentNotValidException, HttpServletRequest)
+2025-11-28 11:13:28 - Error de validación: Validation failed for argument [0] in public org.springframework.http.ResponseEntity&lt;com.example.demo.model.dto.ClienteResponseDTO&gt; com.example.demo.controller.ClienteController.crear(com.example.demo.model.dto.ClienteRequestDTO): [Field error in object 'clienteRequestDTO' on field 'nombre': rejected value [AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]; codes [Size.clienteRequestDTO.nombre,Size.nombre,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [clienteRequestDTO.nombre,nombre]; arguments []; default message [nombre],100,2]; default message [El nombre debe tener entre 2 y 100 caracteres]] 
+2025-11-28 11:13:28 - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-11-28 11:13:28 - Writing [ErrorResponse(timestamp=2025-11-28T11:13:28.355647400, status=400, error=Validation Error, message=E (truncated)...]
+2025-11-28 11:13:28 - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity&lt;com.example.demo.model.dto.ClienteResponseDTO&gt; com.example.demo.controller.ClienteController.crear(com.example.demo.model.dto.ClienteRequestDTO): [Field error in object 'clienteRequestDTO' on field 'nombre': rejected value [AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]; codes [Size.clienteRequestDTO.nombre,Size.nombre,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [clienteRequestDTO.nombre,nombre]; arguments []; default message [nombre],100,2]; default message [El nombre debe tener entre 2 y 100 caracteres]] ]
+✅ Field length validation: Longitud excesiva rechazada correctamente
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.5</a> at Nov 28, 2025, 11:13:28 AM</p>
+</div>
+</div>
+</body>
+</html>
